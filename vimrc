@@ -6,7 +6,6 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'tomasr/molokai'
-Bundle 'davidhalter/jedi-vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-fugitive'
@@ -132,8 +131,4 @@ function! ToggleFocusMode()
   endif
 endfunc
 nnoremap <F1> :call ToggleFocusMode()<cr>
-
-""" Jedi disable auto completion popup
-let g:jedi#popup_on_dot = 0
-let g:jedi#show_function_definition = "0"
 
